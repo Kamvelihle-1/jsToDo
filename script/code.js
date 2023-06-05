@@ -38,23 +38,23 @@ check.addEventListener('change',()=>{
 
 
 // Remove button
-remove.addEventListener('click',()=>{
-    console.log(td.id);
-    let newArray=dataArray.filter((i)=>{
-        return dataArray.indexOf(i) != td.id
-    })
-    console.log(newArray);
-    td.remove
-    output(newArray)
-})
+// remove.addEventListener('click',()=>{
+//     console.log(td.id);
+//     let newArray=dataArray.filter((i)=>{
+//         return dataArray.indexOf(i) != td.id
+//     })
+//     console.log(newArray);
+//     td.remove
+//     output(newArray)
+// })
 
 // Edit button
-edit.addEventListener('click',()=>{
-    console.log(dataArray);
-    input.value=""
-    dataArray[td.id]=input.value
+// edit.addEventListener('click',()=>{
+//     console.log(dataArray);
+//     input.value=""
+//     dataArray[eval(td.id)]=input.value
     
-})
+// })
 
 // Validation and code run function
 function addItems(inData) {
@@ -104,7 +104,7 @@ function output(x) {
     let i=0;
     x=JSON.parse(localStorage.getItem("to-Do-List"));
     x.forEach(data => {
-        td.id=String(count[i]);
+        // td.id=String(count[i]);
         items.innerHTML+=
         `
         <div class="row my-2 item-list " >

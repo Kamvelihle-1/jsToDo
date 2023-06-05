@@ -1,0 +1,8 @@
+.container{
+    background-color: antiquewhite;
+    height: fit-content;
+   
+}
+.operation,.display{
+    gap: 2rem;
+}
